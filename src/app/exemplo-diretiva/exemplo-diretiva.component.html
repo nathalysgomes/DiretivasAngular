@@ -1,0 +1,13 @@
+<h1>Lista de Tarefas</h1>
+
+<ul>
+    <li *ngFor = "let tarefa of tarefas; index as i; first as is first" >
+        <p  [ngClass]="{
+            riscado: tarefa.concluido == true,
+            concluida: tarefa.concluido == true,
+          }">
+            {{tarefa.descricao}}
+        </p>
+        <button (click) = "mudaStatus(tarefa)">Realizar</button>
+    </li>
+</ul>

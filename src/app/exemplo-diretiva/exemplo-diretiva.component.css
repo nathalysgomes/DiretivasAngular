@@ -1,0 +1,12 @@
+.incompleta{
+    background-color: red;
+}
+
+.concluida{
+    background-color: rgb(49, 192, 61);
+    
+}
+
+.riscado{
+    text-decoration: line-through;
+}
